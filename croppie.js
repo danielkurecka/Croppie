@@ -1621,6 +1621,9 @@
         refresh: function () {
             return _refresh.call(this);
         },
+        setPoints: function (v) {
+            _bindPoints.call(this, v);
+        },
         setZoom: function (v) {
             _setZoomerVal.call(this, v);
             dispatchChange(this.elements.zoomer);
